@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Shark University">ee91bd69c3f007104a9d563ed4013121</sc_cat_item>
+        <sc_category display_value="Shark University">c5cb796dc33407104a9d563ed401319a</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 20:51:25</sys_created_on>
+        <sys_id>87db3d6dc33407104a9d563ed40131f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shark University.Shark University</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sc_cat_item_category_87db3d6dc33407104a9d563ed40131f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 20:51:25</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

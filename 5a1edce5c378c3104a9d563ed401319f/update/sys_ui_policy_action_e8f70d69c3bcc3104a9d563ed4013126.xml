@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>instructor</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 17:04:37</sys_created_on>
+        <sys_id>e8f70d69c3bcc3104a9d563ed4013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>instructor</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_e8f70d69c3bcc3104a9d563ed4013126</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 17:04:37</sys_updated_on>
+        <table>x_1590365_shark_0_training_session</table>
+        <ui_policy display_value="Default mandatory fields">c4978d29c3bcc3104a9d563ed40131ee</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8f70d69c3bcc3104a9d563ed4013126"/>
+</record_update>

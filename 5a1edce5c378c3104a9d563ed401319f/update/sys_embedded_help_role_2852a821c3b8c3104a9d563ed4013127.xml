@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role/>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 14:20:14</sys_created_on>
+        <sys_id>2852a821c3b8c3104a9d563ed4013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2852a82dc378c3104a9d563ed4013128</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sys_embedded_help_role_2852a821c3b8c3104a9d563ed4013127</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 14:20:14</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

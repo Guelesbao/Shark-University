@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 14:48:42</sys_created_on>
+        <sys_id>edd8a46dc3b8c3104a9d563ed40131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590365_shark_0_enrollment.x_1590365_shark_0.enrollment_user</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_security_acl display_value="x_1590365_shark_0_enrollment">61d8a46dc3b8c3104a9d563ed40131c1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_edd8a46dc3b8c3104a9d563ed40131c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 14:48:42</sys_updated_on>
+        <sys_user_role display_value="x_1590365_shark_0.enrollment_user" name="x_1590365_shark_0.enrollment_user">a5d82c2dc3b8c3104a9d563ed40131e3</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>sys_security_acl_role_edd8a46dc3b8c3104a9d563ed40131c6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-11 14:48:42</sys_created_on><sys_id>edd8a46dc3b8c3104a9d563ed40131c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1590365_shark_0_enrollment.x_1590365_shark_0.enrollment_user</sys_name><sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package><sys_policy/><sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope><sys_security_acl display_value="x_1590365_shark_0_enrollment">61d8a46dc3b8c3104a9d563ed40131c1</sys_security_acl><sys_update_name>sys_security_acl_role_edd8a46dc3b8c3104a9d563ed40131c6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-11 14:48:42</sys_updated_on><sys_user_role display_value="x_1590365_shark_0.enrollment_user" name="x_1590365_shark_0.enrollment_user">a5d82c2dc3b8c3104a9d563ed40131e3</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1604950450</payload_hash>
+        <record_name>x_1590365_shark_0_enrollment.x_1590365_shark_0.enrollment_user</record_name>
+        <reverted_from/>
+        <source>d61edce5c378c3104a9d563ed40131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 14:48:42</sys_created_on>
+        <sys_id>e5d8a46dc3b8c3104a9d563ed40131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e178302ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 14:48:42</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>a1d8a46d05b8c3100036649e8aaa63cb</update_guid>
+        <update_guid_history>a1d8a46d05b8c3100036649e8aaa63cb:1604950450</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1590365_shark_0_enrollment.x_1590365_shark_0.enrollment_user">26e8e86dc3b8c3104a9d563ed4013198</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 14:49:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>d09f491b8f33499cbcb053d682c75631</sys_id>
+        <sys_metadata>edd8a46dc3b8c3104a9d563ed40131c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590365_shark_0_enrollment.x_1590365_shark_0.enrollment_user</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_parent display_value="">61d8a46dc3b8c3104a9d563ed40131c1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_scope_delete display_value="">6019b5749aa9425eba4ef926327b8524</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_edd8a46dc3b8c3104a9d563ed40131c6</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_edd8a46dc3b8c3104a9d563ed40131c6">e5d8a46dc3b8c3104a9d563ed40131cc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 14:49:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

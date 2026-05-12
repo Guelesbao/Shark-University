@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1590365_shark_0.course_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>course_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 14:16:01</sys_created_on>
+        <sys_id>cb51a82dc378c3104a9d563ed4013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590365_shark_0.course_user</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sys_user_role_cb51a82dc378c3104a9d563ed4013131</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 14:16:01</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>sys_user_role_cb51a82dc378c3104a9d563ed4013131</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1590365_shark_0.course_user</name><scoped_admin>false</scoped_admin><suffix>course_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-11 14:16:01</sys_created_on><sys_id>cb51a82dc378c3104a9d563ed4013131</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1590365_shark_0.course_user</sys_name><sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package><sys_policy/><sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope><sys_update_name>sys_user_role_cb51a82dc378c3104a9d563ed4013131</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-11 14:16:01</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-632935657</payload_hash>
+        <record_name>x_1590365_shark_0.course_user</record_name>
+        <reverted_from/>
+        <source>d61edce5c378c3104a9d563ed40131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 14:16:01</sys_created_on>
+        <sys_id>8f51e8adc378c3104a9d563ed401317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e176518240000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 14:16:01</sys_updated_on>
+        <type>Role</type>
+        <update_guid>4b51e8ad6c78c3108afe2aa9a773b47e</update_guid>
+        <update_guid_history>4b51e8ad6c78c3108afe2aa9a773b47e:-632935657</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1590365_shark_0.course_user">430349edc37cc3104a9d563ed4013132</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 16:43:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>7dbcd819a2d74a40999222847e5e0fa9</sys_id>
+        <sys_metadata>cb51a82dc378c3104a9d563ed4013131</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1590365_shark_0.course_user</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_scope_delete display_value="">6019b5749aa9425eba4ef926327b8524</sys_scope_delete>
+        <sys_update_name>sys_user_role_cb51a82dc378c3104a9d563ed4013131</sys_update_name>
+        <sys_update_version display_value="sys_user_role_cb51a82dc378c3104a9d563ed4013131">8f51e8adc378c3104a9d563ed401317f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 16:43:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

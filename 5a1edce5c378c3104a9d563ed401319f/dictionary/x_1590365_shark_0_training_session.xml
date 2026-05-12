@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1231682dc378c3104a9d563ed4013152" label="Training Session" max_length="40" name="x_1590365_shark_0_training_session" type="collection">
+        <element label="Training Date" max_length="40" name="training_date" type="glide_date"/>
+        <element display="true" label="Course" max_length="32" name="course" reference="x_1590365_shark_0_course" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Instructor" max_length="32" name="instructor" reference="sys_user" type="reference"/>
+        <element label="Max Seats" max_length="40" name="max_seats" type="integer"/>
+        <index name="index">
+            <element name="course"/>
+        </index>
+        <index name="index2">
+            <element name="instructor"/>
+        </index>
+    </element>
+</database>

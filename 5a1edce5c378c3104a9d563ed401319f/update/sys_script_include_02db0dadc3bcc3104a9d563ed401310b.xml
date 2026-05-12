@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1590365_shark_0.SharkUniversityUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SharkUniversityUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SharkUniversityUtils = Class.create();
+SharkUniversityUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	validateTrainingDate: function () {
+		var trainingDate = this.getParameter('sysparm_date_value');
+		var gd = new GlideDate();
+		gd.setDisplayValue(trainingDate);
+		var formattedDate = gd.getValue();
+
+		var grEnrollment = new GlideRecord('x_1590365_shark_0_training_session');
+		grEnrollment.addQuery('training_date', formattedDate);
+		grEnrollment.query();
+
+		var result = {
+			isDuplicate: false,
+			msgExistingDate: ''
+		};
+
+		if (grEnrollment.next()) {
+			result.isDuplicate = true;
+			result.msgExistingDate = 'Training already exists for that date!';
+		}
+
+		return JSON.stringify(result);
+	},
+
+	refQualTrainingSession: function () {
+		var grTrainingSession = new GlideRecord('x_1590365_shark_0_enrollment');
+		var trainingSessionsToBeShown = [];
+		grTrainingSession.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=4');
+		grTrainingSession.query();
+
+		while (grTrainingSession.next()) {
+			var sys_idTrainingSessions = grTrainingSession.getValue('training_session');
+
+			if (sys_idTrainingSessions) {
+				trainingSessionsToBeShown.push(sys_idTrainingSessions);
+			}
+		}
+		
+		if (trainingSessionsToBeShown.length > 0) {
+			return 'sys_idNOT IN' + trainingSessionsToBeShown.join(',');
+		}
+		return '';
+	},
+
+	type: 'SharkUniversityUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 18:11:37</sys_created_on>
+        <sys_id>02db0dadc3bcc3104a9d563ed401310b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SharkUniversityUtils</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sys_script_include_02db0dadc3bcc3104a9d563ed401310b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 23:55:29</sys_updated_on>
+    </sys_script_include>
+</record_update>
