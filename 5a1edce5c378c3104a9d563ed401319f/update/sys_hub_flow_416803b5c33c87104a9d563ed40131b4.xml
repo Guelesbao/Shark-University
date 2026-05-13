@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=93233000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-yokohama-12-18-2024__patch11-12-16-2025_01-04-2026_2103.zip</compiler_build>
+        <copied_from>d65e6345c3d847104a9d563ed40131a9</copied_from>
+        <copied_from_name>Suggestion Lifecycle</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>shark_university_lifecycle</internal_name>
+        <label_cache>[{"name":"a1b0ebae-31c4-4819-bb98-f674f96eb25f.Count","label":"1 - Look Up Records➛Count","type":"integer","base_type":"integer","usedInstances":{"b25f5a31-8154-40b9-9db8-d7380323148a":["condition"],"9b4c3963-8e0a-4760-8925-575385fa4d2c":["condition"],"3d0f3d35-3d72-43ae-9c44-d763348d4699":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a1b0ebae-31c4-4819-bb98-f674f96eb25f.__action_status__.code","label":"1 - Look Up Records➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"b25f5a31-8154-40b9-9db8-d7380323148a":["condition"]},"attributes":{}},{"name":"Created_1.current.training_session.training_date","label":"Trigger - Record Created➛Enrollment Record➛Training Session➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1590365_shark_0_training_session","column_name":"training_date","usedInstances":{"27a882c3-d498-45bf-b15c-c682f065ed66":["new_date"]}},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Enrollment Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1590365_shark_0_enrollment","column_name":"opened_by","usedInstances":{"ec5623e9-6d7f-471b-98ae-283828423e04":["conditions"],"a1b0ebae-31c4-4819-bb98-f674f96eb25f":["conditions"]}},{"name":"Created_1.current.training_session.course","label":"Trigger - Record Created➛Enrollment Record➛Training Session➛Course","reference":"x_1590365_shark_0_course","reference_display":"Course","type":"reference","base_type":"reference","parent_table_name":"x_1590365_shark_0_training_session","column_name":"course","usedInstances":{"ec5623e9-6d7f-471b-98ae-283828423e04":["conditions"],"a1b0ebae-31c4-4819-bb98-f674f96eb25f":["conditions"]}},{"name":"Created_1.run_start_time","label":"Trigger - Record Created➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"{{static.ccd29abdc37487104a9d563ed40131a4}}","label":"Shark University - Training Admin","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"142fb973-2d88-4fd2-a9fc-5a064b2f8fb3":["approval_conditions"]}},{"name":"Created_1.current.type","label":"Trigger - Record Created➛Suggestion Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_1921407_nowflix_suggestion","column_name":"type","choices":[{"label":"Movie","image":"","used":false,"reference":false,"rawLabel":"Movie","selected":false,"missing":false,"value":"movie","parameters":{"name":"x_1921407_nowflix_suggestion","dependent_values":[""]}},{"label":"Series","image":"","used":false,"reference":false,"rawLabel":"Series","selected":false,"missing":false,"value":"series","parameters":{"name":"x_1921407_nowflix_suggestion","dependent_values":[""]}}],"usedInstances":{"71a4b6f4-d19e-4bf6-b96a-06546a2ecad6":["type"]}},{"name":"Created_1.current.release_year","label":"Trigger - Record Created➛Suggestion Record➛Release Year","reference":"","reference_display":"Release Year","type":"string","base_type":"string","parent_table_name":"x_1921407_nowflix_suggestion","column_name":"release_year","usedInstances":{"71a4b6f4-d19e-4bf6-b96a-06546a2ecad6":["release_year"]}},{"name":"Created_1.current.title","label":"Trigger - Record Created➛Suggestion Record➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"x_1921407_nowflix_suggestion","column_name":"title","usedInstances":{"71a4b6f4-d19e-4bf6-b96a-06546a2ecad6":["title"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Enrollment Record","reference":"x_1590365_shark_0_enrollment","reference_display":"Enrollment","type":"reference","base_type":"reference","usedInstances":{"9b69b0ea-a874-43f2-8047-7ec1c01fd970":["record"],"142fb973-2d88-4fd2-a9fc-5a064b2f8fb3":["record"],"d20e7e14-aa13-4c6d-93bb-2d3cf3453974":["conditions"],"90871709-3c1e-4743-8f64-693e4ce847f9":["record"],"ed4b5a0f-4aa8-4179-abbc-ca96aa9c8641":["record"],"0845f383-cf3f-4519-92bf-d7485d2a8752":["record"],"6130f31d-0d28-4a21-8ae6-2f9ca8bc846d":["record"],"645dd190-9214-42db-b1f3-a7f32d0eb4c6":["record"],"374a26e2-00f5-4cdc-b7a6-2546a3f5a2c8":["record"],"a87eee48-dff8-43e9-a338-b154c1e0cdc1":["record"],"ec5623e9-6d7f-471b-98ae-283828423e04":["conditions"],"df327739-6b3b-4771-9fd6-91729da09aca":["record"],"97ec30b5-0182-4da1-ae40-1f91cfa6161f":["record"],"a1b0ebae-31c4-4819-bb98-f674f96eb25f":["conditions"]},"attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Suggestion Record","reference":"x_1921407_nowflix_suggestion","reference_display":"Suggestion","type":"reference","base_type":"reference","usedInstances":{"142fb973-2d88-4fd2-a9fc-5a064b2f8fb3":["record"],"9b69b0ea-a874-43f2-8047-7ec1c01fd970":["record"],"d20e7e14-aa13-4c6d-93bb-2d3cf3453974":["conditions"],"90871709-3c1e-4743-8f64-693e4ce847f9":["record"],"ed4b5a0f-4aa8-4179-abbc-ca96aa9c8641":["record"],"6130f31d-0d28-4a21-8ae6-2f9ca8bc846d":["record"],"577cdf23-ad98-4925-b599-a9454820ecb6":["record"],"645dd190-9214-42db-b1f3-a7f32d0eb4c6":["record"]},"attributes":{}},{"name":"{{static.e0f19516c30443104a9d563ed40131a8}}","label":"Nowflix Administrators","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"142fb973-2d88-4fd2-a9fc-5a064b2f8fb3":["approval_conditions"]}},{"name":"142fb973-2d88-4fd2-a9fc-5a064b2f8fb3.approval_state","label":"12 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"d3448760-fffe-47a3-8568-cf834eb1c94e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Suggestion Table","reference":"x_1921407_nowflix_suggestion","reference_display":"Suggestion","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current.title","label":"Trigger - Record Created or Updated➛Suggestion Record➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"x_1921407_nowflix_suggestion","column_name":"title","usedInstances":{"71a4b6f4-d19e-4bf6-b96a-06546a2ecad6":["title"]}},{"name":"Created or Updated_1.current.type","label":"Trigger - Record Created or Updated➛Suggestion Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_1921407_nowflix_suggestion","column_name":"type","choices":[{"label":"Movie","image":"","used":false,"reference":false,"rawLabel":"Movie","selected":false,"missing":false,"value":"movie","parameters":{"name":"x_1921407_nowflix_suggestion","dependent_values":[""]}},{"label":"Series","image":"","used":false,"reference":false,"rawLabel":"Series","selected":false,"missing":false,"value":"series","parameters":{"name":"x_1921407_nowflix_suggestion","dependent_values":[""]}}],"usedInstances":{"71a4b6f4-d19e-4bf6-b96a-06546a2ecad6":["type"]}},{"name":"Created or Updated_1.current.release_year","label":"Trigger - Record Created or Updated➛Suggestion Record➛Release Year","reference":"","reference_display":"Release Year","type":"string","base_type":"string","parent_table_name":"x_1921407_nowflix_suggestion","column_name":"release_year","usedInstances":{"71a4b6f4-d19e-4bf6-b96a-06546a2ecad6":["release_year"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Enrollment Table","reference":"x_1590365_shark_0_enrollment","reference_display":"Enrollment","type":"table_name","base_type":"table_name","usedInstances":{"ec5623e9-6d7f-471b-98ae-283828423e04":["table"],"a1b0ebae-31c4-4819-bb98-f674f96eb25f":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Enrollment Record➛Due date | due_date","reference":"","reference_display":"Due date | due_date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1590365_shark_0_enrollment","column_name":"due_date","usedInstances":{}},{"name":"27a882c3-d498-45bf-b15c-c682f065ed66.is_same","label":"5 - Compare Months➛Is same?","reference_display":"Is same?","type":"boolean","base_type":"boolean","usedInstances":{"a464b549-dfb4-4c89-a852-93f122f7b493":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f1236a4d-6966-4747-ab86-4b92fb7fa6fe"}},{"name":"a1b0ebae-31c4-4819-bb98-f674f96eb25f.Records","label":"1 - Look Up Records➛Enrollment Records","reference":"x_1590365_shark_0_enrollment","reference_display":"Enrollment Records","type":"records","base_type":"records","usedInstances":{"0f95d81d-091a-40b1-83ac-84558c228d34":["items"],"88f63881-9b60-450f-82d1-970619b95996":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Shark University Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>416803b5c33c87104a9d563ed40131b4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Shark University Lifecycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sys_hub_flow_416803b5c33c87104a9d563ed40131b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=416803b5c33c87104a9d563ed40131b4^sys_idNOT IN8d6803b5c33c87104a9d563ed40131b8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>416803b5c33c87104a9d563ed40131b4</id>
+        <name>Shark University Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:17</sys_created_on>
+        <sys_id>8d6803b5c33c87104a9d563ed40131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:04:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8d6803b5c33c87104a9d563ed40131b8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=416803b5c33c87104a9d563ed40131b4^sys_idNOT IN816803b5c33c87104a9d563ed40131c5,d16803b5c33c87104a9d563ed40131cd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</model>
+        <model_id>416803b5c33c87104a9d563ed40131b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_416803b5c33c87104a9d563ed40131b4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:17</sys_created_on>
+        <sys_id>816803b5c33c87104a9d563ed40131c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:19:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=816803b5c33c87104a9d563ed40131c5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</model>
+        <model_id>416803b5c33c87104a9d563ed40131b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_416803b5c33c87104a9d563ed40131b4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:17</sys_created_on>
+        <sys_id>d16803b5c33c87104a9d563ed40131cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:19:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d16803b5c33c87104a9d563ed40131cd"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=416803b5c33c87104a9d563ed40131b4^sys_idNOT IN596843b5c33c87104a9d563ed4013166"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>596843b5c33c87104a9d563ed4013166</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:19:17</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS52038aIBthvU8bYPQVagpKEtLE26EqXEXeTfO9TNsiQ7dqxsnZcAImnO4eGZM8Pc/9AZcYHpl/qMuAz0nh5wCSEnbLZeAQ5LNexwslRzS8J9IkW41i9lGENPp6FYzmC5YkTiYkpYhIMi9CHUL82enhAWw906uvFxJ/x9uk2+p55P4/eTYw7Ghj0cONGChN8dwwEeCsaWwCUu84MIA6z/yldPqnPeImB+CFy/vH/o6SsSYgSpov+oTQUKgkc9MrbA8GzTtizDsC76pju0XdPybQKGgRvW6ahBli2sbM4LTxK4D35JRYOwEIh/y9m6XLFAvjNyluQpCv7F3S8MtY4CYvcgmys/nZyMbNhbiMCD25UMBM9GMpzZpGDxkn/J8CsagZKYyYJGHIkj3A9WCrICkSOidwvxOC0Cfgp4erp8kgmPsPKLSBkGbiwhUoTTgCH1TsZNJOIwRT+dXN1Or52/P8yufp9Mnenkbja9uZpNrvXn9FzOP7HaMUOYY3Gy4zyXd/8pAKYukMdLF9H09MgLg5X84MkgKYT33NuI+UpwP0hZaQjaK6aibUEXp9+naMPYqWmvErHQ9bfJn035ZoPH6XY4JMQHskO3Lq3otnryFmiyhYTq6fYpOB85RMJ9w/ifRJz70ms1vBQ+sOvNdjpOzueo6oCvYqnYeiRcRo4UDvF9p8KjWoqYXhJ1dramsl/WdBhz3MIpb6ip7JTIktHPQYQHuMe8LNhKt8R5+jnfchpzTeBV4h/Ni0MkS2qF09GbJZnnHNM7YODJiizo16j69UcQRQGfV1CXQVNWGjHLcCgvrThSFjs6MfhDl2ndJD2pkVlL76Nz2zQpdYFaxkhltmnYLjWNkTEg1LcNw7Mqud0EsxOlrEniTXL8uAyPUjGyA6RXpzgHb1Sz4SAZJdsaLEhQEsmN5KobaGZH0CwFrWaI9lGOWMoyG77eVue+o3XcDRA/IfgL/1BjVAsOcEDKxCOa8SvczyXe93koYu7X7UjtqQVc26zQfsn5+7VDJ6QihP0AtleckwduaC+ES/i6A/ezqemOoQ8Gmp6NfucOxmPXIxalo+EILLPmfhsYrdjeheu9oLakTa67HLBVOEmb3o7wvhMANnzwaICnO2AuzFb/y+beh9M9LoA7CDV0mPKyhuHNWeBDMddttjdCJ5v8PjXj6cXYG5ijkTfCdwxmPO2DS8y+NSDj0dC+GNQyvgFlH0zZwsxPed1E6ygFssMNvmZT5/Vcf0vZRiClKkfHV2mOfWz6G5IFqVRKdS1aaioi1L4I/tvNZp12B1gA0yduV+X6EBTqYrW3heEKuWj0Cxj6I45vhVZ95g5Wzu5JVRNJsn3Wk59U0L8YjKndbjF03GYxGzC7YZ59e3FghiQ7c62tzzhU8Elr3uxsDF4h4ZpMqh3DnpamK1LMzkmx3o4U++Q2qsjFne/I14B9RyUs7StOqWMqJjiCVs37Wmg4oWEQLaBa/r9F8DV3rckFIKUM+2UMqKnop7p2tYo0oZQK/rlAsg68Uc1wWMsbqPMrVDUpdPsCBn9EBgN7Rz88rr+A2wC9gPfsy9bRWZG0Jdne2nXcvvU9W6tXRbLbijiwLnV66vbidNqpW8vTS6c+vfDse7+3oDjTkvLwH9STkGNbHwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=416803b5c33c87104a9d563ed40131b4^sys_idNOT IN09a39ff9c37c87104a9d563ed4013124,116843b5c33c87104a9d563ed401315e,1643808ac3f0c7104a9d563ed40131ba,324f33b1c3f0c7104a9d563ed40131ff,5d6843b5c33c87104a9d563ed4013163,614fc7f1c37c87104a9d563ed4013163,85a39ff9c37c87104a9d563ed4013126,956843b5c33c87104a9d563ed4013157,9d6843b5c33c87104a9d563ed401315f,dd6843b5c33c87104a9d563ed401315a,dd6843b5c33c87104a9d563ed401315c,dd6843b5c33c87104a9d563ed4013160"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>state = Reproved &amp;&amp; Reproval Reason</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>a464b549-dfb4-4c89-a852-93f122f7b493</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:53:26</sys_created_on>
+        <sys_id>09a39ff9c37c87104a9d563ed4013124</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>df327739-6b3b-4771-9fd6-91729da09aca</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WXU/bMBT9K1memFRFSdMW6J6mAdImDSQ2IU2UWW5823g4dmY7hVLlv+86cUopH0OIaZq0vjS+9j33nHtPPs5XIWfhOBwAi5P9ZJSlSZr247i/N0imo3Sa9FlKAZKwF0paAJ7UkCnNcL2gonKB1eqDBmqBkSTKKq1B2rrGfcZNKejyzB/DSJZzwXA/HJ9f9MKSakS0oMPxamvLLksggk5BYOKByqoCQYOPB4jxXLZd9mlHd5u+q4Fr5tEJd0HccnySuBfCtQXJAMvNqDDQCwsqGbVKL8Ox1RUGUDU7kWK5PpFzaVulBb02/AbxB7E7NwOUlvkurJfEd6hrjuIZnJSWK9lGLJ2KrnNKVIU8biW43sKMVsJu9LYyiAelo+xItAxnX3J1ddrVO+KyUefZCpVRsV5RazWfVhaMGwcIaJpS0LLkck5KrRa8SUYqRTQXuIhmQl1hTcPnMqKZ4x1hg2h0hPGDJnxGNXciPiMMJteNePKzcnVbGZ4waTQ3gkkzKDxqMs1L+x6BF+Bp1j1v1+nwKQNk+7fz3sC8tew1SYb7cToaEpNTfUliAlIrIZzm+8493Nx7mYe/OhbBccviuQruJD+iyLv4TsybePhqJt77Syb2jP4xF//Ou3H/yYfXxqQbu5oN3xqLz9lJFccpG3zX4PRQQXCERsk2/E1V7qK/u4CACjfcZdB6G1jAZWBzboJMVdpAe10oafM3903/J0u98B6CAglaCFqKvWd3swM44iCYeaC93U3kC5CFL7B+G7zanZSM4ub3/6Xwei+FLugobhnVhZ7MQA/oYCspaO0dzBhpmJNdQoRSl6QqSfv1EPk/VO0aYqI52E9odEnFobR6uZO8fTeRj8BuhSOcNrc7k3AykZPwgbzI5Hxmd9odi0XuIfxQXN4CYAcNXQBb26Cu64tfRviBSucJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09a39ff9c37c87104a9d563ed4013124"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>state = Reproved &amp;&amp; Reproval Reason = Approval.comments</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>d3448760-fffe-47a3-8568-cf834eb1c94e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>116843b5c33c87104a9d563ed401315e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>90871709-3c1e-4743-8f64-693e4ce847f9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V72vbMBD9V4I/dZAZO05Cm30aawsbrIVu9EvTCcU6J1plyZPktFnw/76TJadp+mNdKYzB8iXoTvfuvbuHfLGOOIsm0RBYkh6k4zxLs2yQJIP9YTobZ7N0wDIKkEb9SNIS8KaGXGmG5yUVtQus1x80UAuMpHFeaw3SNg3mGTeVoKvzcA0j+YILhvlocnHZjyqqEdGCjibrnZRdVUAEnYHAwkOV1yWC9j4eIsZz2XbVZx3dXfquB55ZQCfcBTHl+KRJP4IbC5IBtiuoMNCPSioZtUqvoonVNQZQNTuVYrW5seDSeqUlvTH8J+IPE3evAJSWhylsjiRMqBuO4jmcVpYr6SOWzkQ3OSXqUp54CW62UNBa2K3Z1gbxoHKUHQnPsPiyUNdnXb9jLlt1ga1QORWbE7VW81ltwbh1gIB2KCWtKi7npNJqydtipFLGc4GHuBDqGnsaPpcxzR3vGAdE42OMH7bhc6q5E/EZYbC4acWTH7Xr62UEwqTV3Aom7aLwqsk1r+x7BF5CoNn0g11no6cMkB/c7nsL89ayNyQdHSTZeETMguorkhCQWgnhNN937tF27mUe/upY9E48i+cquFP8iKLg4juxYOLRq5l4/y+ZODD6x1z8O+8mgycfr61Nt3Y1W741Ft/ZaZ0kGRt+0+D0UEFwhUZJHy7YW98b2H0j/2n5C70OJTa10PNt+89W3QEccxDMPDCGzuyhAVmGBptX+9Ucn46T9vf/8X6Vx9sL8jHHcMd7LvRUATpA93Zqet6wvYKRljdJB4QIpa5IXRH/kY/DH4p28zDxHOwnVWtJxZG0erWXvnk3lY/g7oRjXDa3e9NoOpXT6IG62Cx4Yfd8xmKTewjfFZe3ADhAQ5fANi5omubyF7VIMSWOCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=116843b5c33c87104a9d563ed401315e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 01:21:35</sys_created_on>
+        <sys_id>1643808ac3f0c7104a9d563ed40131ba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>a1b0ebae-31c4-4819-bb98-f674f96eb25f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXUU/bMBD+K12eNqmKElo61rcJhLQHqASIF8YsJ3Zbb66d2U6hVP3vO8dOGtoUStdtoD36fOf77vN3F+dmHjAS9IOjYTeKcHx49DGKOp0o6vU6KY6TpNNLkyjpJkE7EHhCwdPghFNYTjHP7Xo+P1YUG0pQHBZ7yDouFuBCmM44nl17T7CkY8aJoiLo39y2gwwrcDVUBf35ypaZZRRxnFAOgVf22Na5zd/eGu6j4HX4NkG5LBCDTSpisUTtgN4bKgiFVEPMNW0HEywINlLNKgsUTQaCLw1jJoyrcoLvNXuA448i6zekUFbqGaiWyLNTEiNZSgeZYVI4iwPqNiXPJ+LcFWB5pUOcc1PjNddwHs0sZgvCIxpejuXdRZnwlImiPL/JZYp5tcLGKJbkhmp7F5TTCRyEJjjLmBihTMkpK4IByyQccViEQy7vIKlmIxHi1AIPgSIcnoL9pDBfY8VsFWdwDAQDIMbhtpEjXctcFaxMUcpzXWwoLLQ7K1gUXKGfuUXpqvb1IUcROOhUscx8hoAp9aUs2lsp+jBaSiKVgjCbU9dkrWcaMfLuaw7RpK7xNFdAp1ksvgFaJiw9mmpty0+hIk03hoQbAuAoCaWBazLbHFy5NGWuDHADDoCH8R1PsWOpP9JhQkdMWL/B8EoSPHv/Yb1L/5/CdxtGx3W1bKu0xuAm+fmx9Mjmx1K8t7EEcP/RYDIqf31z6blJ4wp+ZtykH58UweHyvrVUBjnmavNmj5/LU0Y5efS53AJcGTywYmsls014vUCHNsfKd/PgzX83X6U8ARBBjm8mOBPFswWA7ke30dPD69OKDorrr30lrQ3m7Lp6ccvI1sPuU7a411K/W4AsAy8BUevKoWwAXs7X8ngv3c7epNs5eJl0QTg38wp9xVoDweXr1F5d6f9g/fGqP6irFhAvbivpH++WM35pzgObc6U3Oy9qzrqy3M7JBoHt+e27odnaf7K7xxDq8yHXrOiOkRE1y+ylF5HmDvMfTfteXVUPFeX99ju6+2Tv9eJln0EPIEU1XFX9IR3DY2N9PMShM+82Hb4IQ0cFedtCLCPP8H3rosLYCNyPCFbl8Jru7vH99Tc+byXxjd1T8v8mfhx3lfDtL3rgWgXeEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1643808ac3f0c7104a9d563ed40131ba"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Compare Months">c4c83775c3b0c7104a9d563ed401313d</action_type>
+        <action_type_parent display_value="Compare Months">df6823f5c3fc87104a9d563ed4013180</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b25f5a31-8154-40b9-9db8-d7380323148a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 01:04:08</sys_created_on>
+        <sys_id>324f33b1c3f0c7104a9d563ed40131ff</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>27a882c3-d498-45bf-b15c-c682f065ed66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TyW7bMBD9lYJnS9G++FY0DVCgTYAuuQSBwGVkE6AohaLsuIb/vUNLclK3SIsCBXrokY+zvPdm5m5PpCBLknBexHme8pgFPA+DhJYizWIQSRDGYRKTBdG0AYzUsK0EtYDIhqrBQfv9GwMIiSr0+WAMaOtbQ6WWelX10Pey1U+ASz4cMF3IvlN0dztVQYSvpRKYTpZ39wvSUYMtLRiy3J992V0HlaIMFCZejmx+V8ecdg3bV1Pqj9JcA0RWSgqYsdYIxyVcEHi0oAVgw5qqHhakoRqDWrMjS2sGBNAPcaPV7hSxltqOIhv62MuvWD0JXFwNqIpPBpye1WTO7EsrOdx0Fo0cEUuZmk1r1dDo61GCsxVqOij7zNahx3rQOcqOxMSo/rRutx/nhldSH9VNn6rlVJ1e1Foj2WChd6MY5OefuDOi77+fCShosGfV0K5zs+9Mu5HHPki78Y8F/Fq16Dv0cqV9yp1GH2tS/wrxyyN8S410gj9gGUx2zb5o+TDAOzdzntYJz+PSi8OQeUmZp16ZFamXMKA0reOSF4wcjuZWD4OTNdo0GVKNnmJAz43s7GuksIFJ+2ExH0jw4mKxpy2CR9nbedGfXUkQX4TRRRRE2d/a/V9TnNPeThzPDuCc+gtXEP2/gn/rCoqCsahgwssgxivI08wro6D0srKoawjCXIj6j6/g/hvBeRlGKAYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=324f33b1c3f0c7104a9d563ed40131ff"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment Approved</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>20</order>
+        <parent_ui_id>1e7c6b6b-c64a-4c45-8f15-92f56f44e6c5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>5d6843b5c33c87104a9d563ed4013163</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>374a26e2-00f5-4cdc-b7a6-2546a3f5a2c8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPF+WgS7tAYEtIGEmPcIGQ59jG15nzgOIWu6n+fnaQfKbQgxtilj+3j97zHT5zbhSOYc+yELGEs5cjjCCEPeRHyUQIJZDSexOAnzsgpSA5mpQJaKmbGMyIbG1gsviggGhhGY9ooBYVeLs08E3UlyfymX2YidCokM/PO8e3dyKmIMhk1KOd4sTOl5xVgSTKQZuNpSZvcJD06PzU53qp2tftqJXdXvj3DjFmfHQsbNFNWDxo58KShYGBO40TWMHJyUjCiSzVfR0zV7LKQm8BUFLqrNCdPtfht8ge+XcfBlEZ7F9ZD3Du0MqcUFC4rLcqii2iSyZVzpWzy4qIrwXoLnDRSb3nb1CYfVFazFaFVYwTxH9Py8Wp13pko2up6tbKkRK5HRGslskZDbdvRiOuX7OnC315sDEhoF+akqkRxjytVzkR7nlGfj++lGYy5LB+NzFrcF2NCbaljYyoZn5n4aRu+IUrYur+bNGazPfNnIR4aOLeNZ8iLg9SjbuxHgRt6lLhZwjKXZD6PwnCSTDLkLFuP8UNjy+vc6n3BrbWtr7i9D2ZpTZWo9IkRM4PejeWopyJBh+5Z4G+u1VbODRlPGEWpF0wiXE+J+oU9DIUqpbQ+PQfk6/bc+1C5tiqOLjoVb61gsHlPRT0sg1jPiv9hrCTe/2GlV/T3sAzsGbIy6MynoEKzLOMZpC7KKHXDGBI38UnsQuTRgPuB58X8VVReAyQ8fL22no2i1IILStqWbRDxQxSFAU+NpCSJkReSlEWTAFjooQCl6SFMjk4q6xywd/Oy7vb6YXm9ntXei2FBL5fZc6O2zumxCQ5j032/3/PC1PMaZraBkBMhcXd19qC0U8N+rPYlHbBGOAdq/wO4AMnMBcLtnk94rgauGw5NtmcEbvf63wF4/bzhNWjcG4BtAsxLlRPbxraWXW7DFEEc+ImbTnzDLQSRm7EgcJHhGIAA99lHPHF3fwCa8SxG+gkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d6843b5c33c87104a9d563ed4013163"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment Confirmation</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:34:21</sys_created_on>
+        <sys_id>614fc7f1c37c87104a9d563ed4013163</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>a87eee48-dff8-43e9-a338-b154c1e0cdc1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPF+S53EwwJaQOJMW4Qshz7mFpzPnCcQlf1v89O0o8UWhBj7NLH9vF53+Mnzu3CEcw5dkKWMjbhyOMIIQ95EfJRCilkNIkT8FNn5BQkB7NSAS0VM+MZkY0NLBYnCogGhtGYNkpBoZdLM89EXUkyv+mXmQidCsnMvHN8ezdyKqJMRg3KOV7sTOl5BViSDKTZeFrSJjdJj85PTY63VrvafbUqd7d8e4YZsz47FjZopmw9aOTAk4aCgTmNE1nDyMlJwYgu1XwdMarZZSE3gakodKc0J0+1+G3yB75dx8FIo70L6yHuHVqZUwoKl5UWZdFFNMnkyrlSNnlx0Umw3gInjdRb3ja1yQeVrdkWoVVjCuI/puXj1eq8M1G06vpqZUmJXI+I1kpkjYbatqMR1y/Z04W/vdgYkNAuzElVieIeV6qcifY8U30+vpdmMOayfDRl1uK+GBNqpY6NqWR8ZuKnbfiGKGF1fzdpzGZ75s9CPDRwbhvPkJcEE4+6iR8FbuhR4mYpy1yS+TwKwziNM+QsW4/xQ2PldW71vuDW2tZX3N4Hs7SmSlT6iylmBr0by1FPRYoO3bPA31yrrZwbMp4wiiZeEEe4nhL1C3sYClVKaX16DsjX7bn3oXJtqzi66Kp4q4LB5j2KelgGsZ4V/8NYSb3/w0pf0d/DMrBnyMqgM5+CCs2yjGcwcVFGqRsmkLqpTxIXIo8G3A88L+GvovIaIOHh67X1bBSlFlxQ0rZsgwiLoygmHNEgSNMEeSGZsCgOgIUeClAEhzA5OikLLlS+yvk+ZtYdXz8ur2ta7b0YinpZas+O2jqnRyc4jE73DX/PK1PPa5jZJkJOhMTd9dmD046G/WjtSzrgjXAO1P4LcAGSmUuE2z2f8GQNXDcsmmzPKNzu9b+D8Pp5w2vQuDcA2wSYl/bemlWtll12wwmCJPBTdxL7hl0IIjdjQeAiwzIAAe6zj3jm7v4AgA3p1P4JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=614fc7f1c37c87104a9d563ed4013163"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment Reproved</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>a464b549-dfb4-4c89-a852-93f122f7b493</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:53:26</sys_created_on>
+        <sys_id>85a39ff9c37c87104a9d563ed4013126</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>97ec30b5-0182-4da1-ae40-1f91cfa6161f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPF+WgS7qYxJKQNJMZ2g5Dl2MfUmvOB4xS6iv++4zQtLdCCGGOXPraP3/MeP3EuF54S3qEXi0yIXJJAEkICEiQkJBlkUPB0kkKYeSOvYiXgSgO8NgLHM6Y7F1gsPhtgFgQlY94ZA5W9v8d5odpGs/nPYRlG+FRpgfPe4eXVyGuYwYwWjHe4eDRl5w1QzQrQuPGo5l2JSQ9OjjDHa9Wudp+v5D6W787AsRiyU+WCOOX0kJEHdxYqAXiaZLqFkVeySjBbm/k6glWLs0o/BKaqsstKS3bXqt+YPwrdOglYGh9cWA/p4NDKnFpxOGusqqtlxLJCr5yrdVdWp8sSnLcgWafthrddi/mgcZqdCGs6FCS/T+vb89V5x6rqqxvU6pozvR4xa40qOguta0enLp6zZxn++mxjQEO/sGRNo6pr2ph6pvrzUH05vtY4GEtd36LMVl1XY8ZdqWM0lY2PMX7Uh38yo1zd3zANbnZn/qjUTQcnrvGCBGmUB9xPwyTy44Azv8hE4bMilEkcT7JJQbz73mN607nylm4NvtDe2t5X2t8HXNpyoxr7CcXMYHDjfjRQkZF99ywKH67VRs4HMu4oSfIgmiS0nTLziwYUKlNr7Xx6CsiXzbm3oXLhVBycLlW8toKtzTsqGmDZig2shO/GShb8H1YGRX8Py5Y926xsdeZDUOFFUcgCcp8UnPtxCpmfhSz1IQl4JMMoCFL5IiovARLvv14bz0ZVWyUVZ33LHhDJiUjiSOYoKctSEsQsF8kkAhEHJCJJsQ+Tg3NwzoF4My/rbq8flpfrWe093S7o+TIHbszGOQM20X5slt/vt7ww7byFmWsglExpurw6O1B6VMNurHYl3WKNSQnc/QdIBVrgBaL9ng94rrZcRw4x2xMCN3v97wC8eNrwFiwdDKAuAZW1KZlrY1/LY27jnEAahZmfT0LkFqLEL0QU+QQ5BmAgQ/EeT9zVH1njU/b6CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=85a39ff9c37c87104a9d563ed4013126"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Atualiza o state p Awaiting Moderator Approval</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>956843b5c33c87104a9d563ed4013157</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>9b69b0ea-a874-43f2-8047-7ec1c01fd970</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UUWvbMBD+K8HPxshxEpq8jWWBPayFbvSlK0K2LomYLHmSnCYL+e872XLqplsXSmAMpjfd6b77vtPH3e8jwaNZNAJO0mk6KbI0y4aEDK9GaT7J8nTIMwaQRnGkWAn40kChDcf7hsnaB/b79waYA07TpKiNAeUOB8xzYSvJdnfhGUaKtZAc89Hs/iGOKmYQ0YGJZvuTlNtVQCXLQWLhXBd1iaCDj3PEOJdtV33b0T2l73vgnQd0KnwQU55PSuIItg4UB2y3ZNJCHJVMcea02UUzZ2oMoGp+o+Tu+GItlGuVlmxrxQ/EHxH/bgkorQhTOF5pmFA3HC0KuKmc0KqNOJbLbnJa1qW6biX42cKS1dL1ZltbxIPKU/YkWobLz2v9eNv1WwjVqAtspS6YPN6Yc0bktQPrvwMkNEMpWVUJtaKV0RvRFCOVMllJvCRLqR+xpxUrlbDC805wQCxZYHzehO+YEV7EJ4TB4kMjnn6vfd9WRiBMG82NYNp8FD61hRGVe4fAGwg0D3Gwaz5+zQDF9Om/e5hPlt3SdDwl2WRM7ZqZb5RQUEZL6TW/dO6Hfu5tHv7iWQyuWxbnKnhW/BtFwcXPYsHE44uZ+OovmTgw+sdc/CfvkuGry6v3041dbc+31uGe/VoTkvHhS5+eZN/oVCgR08GgRY3P5twBLARIbn8horNqaEA3ocFx517Mr+mENOf/6r3g6n34CQCq4uYrCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=956843b5c33c87104a9d563ed4013157"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment Reproved</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>d3448760-fffe-47a3-8568-cf834eb1c94e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>9d6843b5c33c87104a9d563ed401315f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>0845f383-cf3f-4519-92bf-d7485d2a8752</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPF+WgS7qYxJKQNJMZ2g5Dl2MfUmvOB4xS6iv++4zQtLdCCGGOXPraP3/MeP3EuF54S3qEXi0yIXJJAEkICEiQkJBlkUPB0kkKYeSOvYiXgSgO8NgLHM6Y7F1gsPhtgFgQlY94ZA5W9v8d5odpGs/nPYRlG+FRpgfPe4eXVyGuYwYwWjHe4eDRl5w1QzQrQuPGo5l2JSQ9OjjDHa9Wudp+v5D6W787AsRiyU+WCOOX0kJEHdxYqAXiaZLqFkVeySjBbm/k6glWLs0o/BKaqsstKS3bXqt+YPwrdOglYGh9cWA/p4NDKnFpxOGusqqtlxLJCr5yrdVdWp8sSnLcgWafthrddi/mgcZqdCGs6FCS/T+vb89V5x6rqqxvU6pozvR4xa40qOguta0enLp6zZxn++mxjQEO/sGRNo6pr2ph6pvrzUH05vtY4GEtd36LMVl1XY8ZdqWM0lY2PMX7Uh38yo1zd3zANbnZn/qjUTQcnrvGCBGmUB9xPwyTy44Azv8hE4bMilEkcT7JJQbz73mN607nylm4NvtDe2t5X2t8HXNpyoxr7CcXMYHDjfjRQkZF99ywKH67VRs4HMu4oSfIgmiS0nTLziwYUKlNr7Xx6CsiXzbm3oXLhVBycLlW8toKtzTsqGmDZig2shO/GShb8H1YGRX8Py5Y926xsdeZDUOFFUcgCcp8UnPtxCpmfhSz1IQl4JMMoCFL5IiovARLvv14bz0ZVWyUVZ33LHhDJiUjiSOYoKctSEsQsF8kkAhEHJCJJsQ+Tg3NwzoF4My/rbq8flpfrWe093S7o+TIHbszGOQM20X5slt/vt7ww7byFmWsglExpurw6O1B6VMNurHYl3WKNSQnc/QdIBVrgBaL9ng94rrZcRw4x2xMCN3v97wC8eNrwFiwdDKAuAZW1KZlrY1/LY27jnEAahZmfT0LkFqLEL0QU+QQ5BmAgQ/EeT9zVH1njU/b6CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9d6843b5c33c87104a9d563ed401315f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Dispara uma aprovação para o grupo Training Admin</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>dd6843b5c33c87104a9d563ed401315a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>142fb973-2d88-4fd2-a9fc-5a064b2f8fb3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9lUDPjpeyLpb9Fmw2RRe7WyBJ+xIHAkWOYnZpypWoNK7gf+9QomzFTlQj60Xaoi8GOJzLmZkzFOmbyhHcmTrjKB3BZDIiiUuIR0gUMBJ5kHjjcOxRRpyBo+gCUDMHluUc1/dUlkZQVb/nQDXw2B2yMs9B6fUa97kolpKuPlg1lLC5kBz3nenN7cBZ0hw9asidabWzpVdLiCVNQKLhecbKBTo9eXuOPg5F21pftnB34ZsYuObWeyyMELcMHjJw4EGD4oDRUioLGDgLqjjVWb5ypjovUYBJ83dKrjYac6F0k+iCPhTiC7r3RkYvBcyM2SJslrEtUFubTDB4t9QiU41E00S2hctkuVD/NBmY0kJKS6k7pS0L9AdLA9mAaBCmV/Ps82Ub70KoOjmLVmaMys2Kap2LpNRQmG6AhLomC7pcCnUXL/PsXtTGCGUxvJO4GKYy+4wxC3GnhpQZ3EMsEB1eoPy8Fn+guTBJ/I1u0HhdJx9/Kk3cJg0LOK5zbhJGrYLlYqnP0Oc9WITrgSVqwnpbz7adbtxtefoQu8GEeGEQF3Oa/xuTGFSeSWky3afrH929lxH32gA4qbs2OBj8I+P9ZCxr62WsGteWtG4/aa3kENZG5HVYaxH9YLT9FmPBD70Af8apR9yRSyIIo4hNCGVRGAa+t20yxkPEVMbYpAJ9b7l7xOP0Cium7lpGHgCuNTyz6E4uW3TPwrYsLdpQlqGjozHUDX9Qipbieqc2jeSv3e78P1w24d4r8amEt6b74SgJJyTipzwlyakfecEpZUBOIXQDCHjIAtf7z/wnbt+hx6MniJQKkN0rRruxPwadnZeNw4UJ9eiQPgDv3khcWMDPJWIHol7uHNvHG4qIkFeaip/3usF6yQCdw/tjVuaqh7vxXBR1S5/lcEfjWFw+AH5r/GeDf5fKu2n1MNn7xeTvmMl+0EsFeOL0YpniwuArOnxuzjwoLuEjMF2cqdWbm6oqNNWCDRnjowlNOPPGfjR2iU8nPAg94D5xPZf66/XtPv+P4PFl87K90ZQSinZmDijU5nFp7XoLZydme0uyRnZq/GO9NV9vaH7Oezvr5UE62fadl1gOqruPzWrmNCBnznTmqEzBzBnMHKMVG0LUYtRAcJuNWlZV63UjKXNqHbid5daa01VRaxZsDhxJVUsfSRqmW/kx/5O5sgFOzhH3b9ei88X5dtU2f+yUjf2ThWyfEG0mTeVE93sTHO174/8anJ1HQry5WOPnBY+gF0/T7VfykaedYhQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd6843b5c33c87104a9d563ed401315a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>approval for = Enrollment Record &amp;&amp; state =  Rejected</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>d3448760-fffe-47a3-8568-cf834eb1c94e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>dd6843b5c33c87104a9d563ed401315c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>d20e7e14-aa13-4c6d-93bb-2d3cf3453974</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjiv5JjtvRQIDBXYboE37kqYERVIxd2lSJamkjuF/71CUbMf32C6avoXDuZyZOTOmcjcNOQ0vQzqIBtlg0O0nUdRuR1Gv1yY4TtN2j6RRijthI5R4zEDT4lQwOD5iUbizmRic51rBGfk/mIZryk0u8ORrpfW+UoEbMuKCaibDy7v7RphjDX4t2FxOV67sJGdI4JQJcHDrwgYfHYbGwZBfGK+n4ALURyS9a6WpwxI1QvbTMkkZhMqwMKwRjrGk2Co9mUs0w/RGioVgxKUFj6FT/mn4M7jvR04vY5AWYf5ufkRVlbyYjBQn7Ca3XEkv8UD9pRLFWH70Cbj6sgwXwtb1BUlhwB/LHWYHokKUfR6pp091wCGXZXrVpVAEWlKfsLWap4VlxvWCCTYGR2gMTeXyAbn+8dIYsIybDwIOzUyoJwhq+INsYuKAN6FEuDkE+XUp/oo1d1n8C25KYmRcQLeRL7pRhS6r8oiIKEx5obE03lc4K2uFfhQOpc+6yg/5EoGCIZrn9j0YPLIqlVmjZnV3J0UGC0oQJSl3Mc1man8rwAOdTq+g5ZZRFDdJoaGkdjb7biyIvIJm/zEC9+sDcJKv40bmajmnQ+ux0XhTkarheSGrhic+2/B0ougPjY/Vxdubnn3z4BPeMxQx3UkCuui3UdoiX7mlqVjn9tEMHXIm6IulfgC42vjGkS1IJ9vwVgTNXIyV7d7667f7m6QnAKLI15tLwWX54wpAz8Pb7k5qpPEKD8r2L+1yJ8OGrLMXB1YFz8dv2bKvNX8PAFkbfgZEwa1HuQF4vV9r9xV122ejbrv1OuoCce6mc/Tzqm0ocP2Gcq2r9Z+dPl7VB3YtGcSz+zn1r46LGb82ZsvFXJnN9quGc5lZ/uZ6C8HO/ELbMmyN3zndIzCt4iE/rOiJ0wdmF9FrLarsExb/b7qv2DWfoTK9k1978c4PgnTptcczNIY+8RyeoJoRoIJBWDOUqUJSVD0+F7Rxfcu4NrZSXt8hn5gttAwUjFxgRywotYO59jk2ywHZ1YYfsqBOr8JgAkgvKNML5um9rhhb9lHnjG+9U/bREHNRlh4+IvKl3jGtld6yk/Z0bUf7D1xYB4KKzwrq9I22ie8bN9serH/FF+mpW4cwnHZauJe04ziK4ogmUT9J4n4vzXo46WSLQUPISAJrETxnQAxwj2oi1F2N1leL341H/9sEdu67YeXiULy18bWS7lO0ldjAAYY+BzXg/SlV+yJVSjAsF/Ts/rGF8Vb+s1Lw29XaeNE/m5r2u37MC/5F8h8F++BI0WdRqx9TctFP4uSik9HexYDi7gUepN2kTRnpZMf/Pt//AuONpydlFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd6843b5c33c87104a9d563ed401315c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Atualiza o state para Approved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <generation_source/>
+        <order>19</order>
+        <parent_ui_id>1e7c6b6b-c64a-4c45-8f15-92f56f44e6c5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>dd6843b5c33c87104a9d563ed4013160</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>6130f31d-0d28-4a21-8ae6-2f9ca8bc846d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UUWvbMBD+K0HPxthxEpq8jWWBPayFbvSlK0K2LomYLHmSnCYL+e872XLqplsXSmAMpjfd6b77vtPH3e+J4GRGRsCTdJpOiizNsmGSDK9GaT7J8nTIMwaQkogoVgK+NFBow/G+YbL2gf3+vQHmgNM0LmpjQLnDAfNc2Eqy3V14hpFiLSTHPJndP0SkYgYRHRgy25+k3K4CKlkOEgvnuqhLBB18nCPGuWy76tuO7il93wPvPKBT4YOY8nzSJCKwdaA4YLslkxYiUjLFmdNmR2bO1BhA1fxGyd3xxVoo1yot2daKH4g/Svy7JaC0IkzheKVhQt1wtCjgpnJCqzbiWC67yWlZl+q6leBnC0tWS9ebbW0RDypP2ZNoGS4/r/XjbddvIVSjLrCVumDyeGPOGZHXDqz/DpDQDKVkVSXUilZGb0RTjFTKeCXxEi+lfsSeVqxUzArPO8YBsXiB8XkTvmNGeBGfEAaLD414+r32fVsZgTBtNDeCafNR+NQWRlTuHQJvINA8RMGu+fg1AxTTp//uYT5ZdkvT8TTJJmNq18x8owkFZbSUXvNL537o597m4S+exeC6ZXGugmfFv1EUXPwsFkw8vpiJr/6SiQOjf8zFf/JuMnx1efV+urGr7fnWOtyzX+skyXj20qcn2Tc6FUrEdDBoUaOzOXcACwGS21+I6KwaGtBNaHDcuRfzazpJmvN/9V5w9T78BBnjBy8rCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd6843b5c33c87104a9d563ed4013160"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=416803b5c33c87104a9d563ed40131b4^sys_idNOT IN156843b5c33c87104a9d563ed4013151,5d6843b5c33c87104a9d563ed4013155,a64f33b1c3f0c7104a9d563ed40131fc,afae84cec334c7104a9d563ed40131c9,be4f73b1c3f0c7104a9d563ed4013104,d56843b5c33c87104a9d563ed4013154,efae84cec334c7104a9d563ed40131c7,fe4f73b1c3f0c7104a9d563ed4013100"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">876e3385c35c47104a9d563ed40131d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>156843b5c33c87104a9d563ed4013151</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>d3448760-fffe-47a3-8568-cf834eb1c94e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U224aMRD9lWifAe0FKPBSoVaRKrWNlER5aaLVrD0Gt157a3shFPHvHe+FoIYoVZXHvuEzt3Nmz7CPTO2r2rtbs3ROrnS0+PYwiKQOGP3eRxpKjBYRM5pLL43OG2AQbUDVIbDkpdTSeQve2Itr/I7MI39PGVy6SsHu7tVEtpaKW+xmV2BpgkcbLfZ/hPyuwlxBgYr63Xgr9YrKJaeXiEEkc5awLJ1maRyns3FSTLMiSXkGCBnl9YUfeikXnxtk8KLGMI9w108ylgdaSTyI8NGj5kijBSiHg6gEzYOy3RGxCPxKqydgLbWndlFIfnTyF/VOJ5OQKJA0MmyDx2febbCF2dpIhldVINgiHgrV1TCj6lJ/bXWE3aOAWvl+94TUjvphFUgHFh0lcbM22+t+4KXUjcAuqAwDdXyBpzUUtUcXPgwqLKlRXkJV0XLyypqNbIqJSzlaKXqMhDJbGhp8NQIWiI9oRzC6JPxjA9+BlUHFF2pDxS3NApxkeeNBauctSTg0a8l/1oFQK7CTkrfboATHrKz8kuZssGN9GDw38Il39/tknIpi/i4bpnw2G44FT4cwF2w4gXg6LlIxE0U2Im6kDlTuPHg8HO7rOM7Ila2Dnzv9rdq+xV3MYSImSTw5fxfj6bm7OHMRLx9D+soxhM/3l7cQx/H/Yzg9Buny1tSdtmb4P9/CQzB+O8G1vuHIpCMitwH71P/nh8CODCDZKbQ19keQ8IQdfgP99oNRPQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5fdb6711c3d003104a9d563ed4013143</block>
+        <comment/>
+        <connected_to>d3448760-fffe-47a3-8568-cf834eb1c94e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>18</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>5d6843b5c33c87104a9d563ed4013155</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>1e7c6b6b-c64a-4c45-8f15-92f56f44e6c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">664f33b1c3f0c7104a9d563ed40131fb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>88f63881-9b60-450f-82d1-970619b95996</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 01:04:08</sys_created_on>
+        <sys_id>a64f33b1c3f0c7104a9d563ed40131fc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>b25f5a31-8154-40b9-9db8-d7380323148a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V32vbMBD+V4yfE+MfSZbkZZSOQmFbYS19WTtxls6JmCJ5kpw0C/nfd7KdtKwpK2Wwl71Z3+nuvu90H97FpvF1492NOXNOLnQ8/3o/iKUOGH3vYg0rjOcxN1pIL41mLTCI16CaELh0kV9i1Di0ESiLILaRxYV0Hi2KqDKW4tJF3DTW4XvKFNLVCra3by7Al1IJiz3XGiwxosvxfPdbyG9rZApKVNTn2lupF5QuBZ2qFKpsxjNe5JMiT9N8OsrKSVFmuSgAoaB7h8Tzg/ToY4sMXpxJ6Ee4O3QyVgRaWTqI8cGjFkitK1AOB/EKtABv7PaIBOlXWj0CS6k9lYvD5Qcnf1LtfDwOFysajebYBY9H1k+2g/nSSI5XdSDYIR5K1edwo5qV/tzpCG+CFTTKH96EEHoPJrAOpAOLnlJ1vTSbL4eGF1K3AvugMhzU8QSexlA2Hl14GFS4okJsBXVNw2G1NWvZJhOXVbJQdEgqZTbUNOxhAjwQT2hGkFwQ/qGFb8HKoOITlaHkjmYJTnLW7iyV85Yk7NuxsB9NINQJ7KWwbhp0wXEra39GfdbYs94Pni/8k13f7SArUywBh0XGR8PRNJsNy3I2HVaTd6NqNsEyH1cJYx155jz4xjGWcCNwv79r0rQQ6bdXljk3jfZ9Fh89N84/ZvM3XDiDcTXO0vFpF44mp1x4wn8vWy//g/XCsrzSeWma/rfeU+tJxzoL9dra5m923n2wWdfBdXsjkEtHRG4Cdnn4I4XAlhZA8qfQxtjvQcIjtv8FWw16KdsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2bae84cec334c7104a9d563ed40131c9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 02:11:23</sys_created_on>
+        <sys_id>afae84cec334c7104a9d563ed40131c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>88f63881-9b60-450f-82d1-970619b95996</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW/bMAz9Lzonhj8yL86twFCgh61AV/QyFAYl0YkwWdIkOaln5L+Pip106GnYyeIj+fieKE/MDtENMTzbuxDU3rDdj9cVUyZhdJ6YkmzHikZ2TZE3oirrqszzcrspeF3xopQVoKzZihnokSpVxD5QeAQ9pHiaoOA5csB1VYjNerMtmjXnzXbd1Z83XVMjLz912RMK62U4n6lVquA0jC//zyAOSkuPixkHnrRF9Gw3fUjF0WGrgaOmQQsD9f+r52vnw2L6wx0kdgr9jZc+SUWZrxi+RTQSaVAHOuCK9WAkROtHtot+IMAjyEejx1vFQZlIdCzVvgX1m7iLPE+FHZIjgXPyFrbLRc6wOFgl8NFFZc2MROB66RFWD735NstPK8AOBh2vKyBkCMSHLmlOKhZJ3feDPT1dB94rc/G3JLUVoG8RxOgVHyKGtAbU2BNR24Nzyuxb5+1RXZpJS5/tNQVZp+2JhqZnmYFIwjO6IsjuCf9ygV/Aq+TiK9FQ8/nivv01pLmzj0VxO5umgiC8cvGO6I64iDu/pvc6M4X5YUgUKtDA54Q9XP+GlBhpyUr8DZ2s/5mkvmPnP6td4p1XAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b64f73b1c3f0c7104a9d563ed4013104</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>a464b549-dfb4-4c89-a852-93f122f7b493</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 01:04:09</sys_created_on>
+        <sys_id>be4f73b1c3f0c7104a9d563ed4013104</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>fc9e7b32-69a5-495d-b120-4a71855918c2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">df6e3385c35c47104a9d563ed40131dd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>d3448760-fffe-47a3-8568-cf834eb1c94e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:18</sys_created_on>
+        <sys_id>d56843b5c33c87104a9d563ed4013154</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>aaac4159-e223-424b-8874-e1da715737a9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2bae84cec334c7104a9d563ed40131c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 02:11:23</sys_created_on>
+        <sys_id>efae84cec334c7104a9d563ed40131c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>3d0f3d35-3d72-43ae-9c44-d763348d4699</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4bOSeCPJEtyGYoOxQZsK7AWvWyFQUt0IkyWPElOmgX576NsJy3WFAu2HncxpEeJfHzig3fMNL5uvLs1F87JpWaLr/cDJnXAaL1jUrAFK2MokzlPeJZOszSO09k4KaZZkaQiA4SMDZiGCukkN1pIL43OW2DA1qCaEIjeg4v8CqPGoY1AWQSxjVBboxSKSOo2yE1jHdLSIn1lhe4t5RDS1Qq2d6+Qiq+kEhb7PmuwxNKjZYvdbyG/rTFXUKCiijfeSr2k6+eqcbh4eZAj+tgiL+sU6hHuDpWMFYFWEg8YPnjUAql0CcrhgFWgBXhjt0ckSHCt1SOwktpTOhYOPzj5k3Knk0k4WCL1yLELHrd5r3EH85WRHK/rQLBDPBSqv8ONair9uesjvA6W0Ch/eB1C6F1ygXUgHVj0lMqbldl8ORS8krptsA8qw0Edd+BJhqLx6MLDoMKKEuUV1DWJk9fWrGV7mbhUo6WizahUZkNFwwyPgAfiI9IIRleEv2vhO7AydPGJ0tDljmYBTvK8nXdK5y21sG9lyX80gVDXYN9K3qlBBxy3svYXVGeNPev9oDfLHCblJIknp8djPD0xBE98sttBUsRYAA6zhI+H41kyHxbFfDYsp2/G5XyKRTopR5em0X6//9bEcYbtV2TPnfJvyV7DK2eI8cwrpwV6wSDpHwwSnvRMf8Rx/N8gTw0iXd4Net9bW/yv/XEfhryr4Lq5EcilIyK3Aftw+OeEwJYGQPKn0MbY76GFR2z/C9I1YXe9BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f64f73b1c3f0c7104a9d563ed4013100</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Shark University Lifecycle">416803b5c33c87104a9d563ed40131b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>b25f5a31-8154-40b9-9db8-d7380323148a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 01:04:09</sys_created_on>
+        <sys_id>fe4f73b1c3f0c7104a9d563ed4013100</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 02:11:23</sys_updated_on>
+        <ui_id>a464b549-dfb4-4c89-a852-93f122f7b493</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9K5Of08hJmtD1BU2gSUjAJDbtBaboxnZaC8cOttOuVP3vXOejq1gnEPDIW++5X+fcHHdPTOfbzrs7c+WcXGmy/PwQEakDhr/3REMjyJIwo7n00uiyByKyAdWFxC2GF43Rfv0aUS5dq2B3fzbJ1lJxK8YdLVjMemHJcv9Tyu9aUSqohAozvJV6he2SY1RTqJNLlrAsLbKU0nQxT6oiq5KUZyAgw7qp8c1E+eJ9j0Qvagn7EHfTJmN5oJXQiIhHLzQXuLoG5UREGtAcvLG7I2IF8ButnoC11B7HkVD86OR3nJ3meSisBWpkYkgew3K82gCztZFM3LSB4IB4qNTYw4zqGv1x0BHuLWrolJ/ujUjncJ5oA+nAYqRU367N9tO08FrqXuCYVIaBOkbg8QxV54ULH0Yo0eCgsoG2xeOUrTUb2TcjlyZeKQziWpktLg3+iYEF4jHeCOJrxN/28D1YGVR8wDHYPNCswElW9l7Dcd6ihEN/lvJbFwgNAkcp5XANLHDMytZf4Z6NGFkfoudGPfHofp++gsUiZdmMzy8Xs3le1bMqydmMFYu0pkUueFHE0pUOhxwOXzpKM94Tembpv5r1L17AJeR1ntD8/AuYF+dewBnvv2z79Be2D1p+0/WU0v+2P7V9sEVv31Fbv/yPXf8QLD5scINvuGDSIZG7gL2b/sVDYocGkOwU2hr7NUh4wg4/AC20FpoPBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_416803b5c33c87104a9d563ed40131b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:17</sys_created_on>
+        <sys_id>596803b5c33c87104a9d563ed40131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:04:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_416803b5c33c87104a9d563ed40131b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:04:17</sys_created_on>
+        <sys_id>5d6803b5c33c87104a9d563ed40131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:04:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_416803b5c33c87104a9d563ed40131b4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_416803b5c33c87104a9d563ed40131b4"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=416803b5c33c87104a9d563ed40131b4"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=416803b5c33c87104a9d563ed40131b4"/>
+</record_update>

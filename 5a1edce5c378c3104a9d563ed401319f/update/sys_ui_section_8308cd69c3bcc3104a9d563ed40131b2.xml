@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:13:08</sys_created_on>
-            <sys_id>d9e9096dc3bcc3104a9d563ed40131a2</sys_id>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>33878735c33c87104a9d563ed401313b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:13:08</sys_updated_on>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>training_session</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:13:08</sys_created_on>
-            <sys_id>95e9096dc3bcc3104a9d563ed40131a3</sys_id>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>fb878735c33c87104a9d563ed401313b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:13:08</sys_updated_on>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:13:08</sys_created_on>
-            <sys_id>51e9096dc3bcc3104a9d563ed40131a4</sys_id>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>b7878735c33c87104a9d563ed401313c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:13:08</sys_updated_on>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>state</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:13:08</sys_created_on>
-            <sys_id>1de9096dc3bcc3104a9d563ed40131a4</sys_id>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>73878735c33c87104a9d563ed401313d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:13:08</sys_updated_on>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,41 @@
             <element>opened_by</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:13:08</sys_created_on>
-            <sys_id>d5e9096dc3bcc3104a9d563ed40131a5</sys_id>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>3f878735c33c87104a9d563ed401313d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:13:08</sys_updated_on>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>f7878735c33c87104a9d563ed401313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reproval_reason</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-12 21:00:39</sys_created_on>
+            <sys_id>b3878735c33c87104a9d563ed401313f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_enrollment" sys_domain="global" view="Default view">8308cd69c3bcc3104a9d563ed40131b2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-12 21:00:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
