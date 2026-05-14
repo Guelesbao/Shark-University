@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="translated_text" label="Translated Text" language="en" table="x_1590365_shark_0_course">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>translated_text</element>
+            <help/>
+            <hint/>
+            <label>Translated Text</label>
+            <language>en</language>
+            <name>x_1590365_shark_0_course</name>
+            <plural>Translated Texts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-14 13:32:01</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Translated Text</sys_name>
+            <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+            <sys_update_name>sys_documentation_x_1590365_shark_0_course_translated_text_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-14 13:32:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

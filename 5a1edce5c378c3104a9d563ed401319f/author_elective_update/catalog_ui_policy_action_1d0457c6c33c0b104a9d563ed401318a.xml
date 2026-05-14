@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Shark University">ee91bd69c3f007104a9d563ed4013121</catalog_item>
+        <catalog_variable>IO:8a5c7dadc33407104a9d563ed401318e</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message>There are no available registrations or you have already registered for all of them!&#13;
+</field_message>
+        <field_message_type>error</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 16:33:55</sys_created_on>
+        <sys_id>1d0457c6c33c0b104a9d563ed401318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>training_session</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_1d0457c6c33c0b104a9d563ed401318a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 16:33:55</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Info message if training session field is empty">1fd3df86c33c0b104a9d563ed4013182</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>training_session</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=1d0457c6c33c0b104a9d563ed401318a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>catalog_ui_policy_action_1d0457c6c33c0b104a9d563ed401318a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Shark University">ee91bd69c3f007104a9d563ed4013121</catalog_item><catalog_variable>IO:8a5c7dadc33407104a9d563ed401318e</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message>There are no available registrations or you have already registered for all of them!&#13;
+</field_message><field_message_type>error</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-13 16:33:55</sys_created_on><sys_id>1d0457c6c33c0b104a9d563ed401318a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>training_session</sys_name><sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package><sys_policy/><sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope><sys_update_name>catalog_ui_policy_action_1d0457c6c33c0b104a9d563ed401318a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-13 16:33:55</sys_updated_on><table/><ui_policy display_value="Info message if training session field is empty">1fd3df86c33c0b104a9d563ed4013182</ui_policy><value/><value_action>ignore</value_action><variable>training_session</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=1d0457c6c33c0b104a9d563ed401318a"/></record_update>]]></payload>
+        <payload_hash>-192333224</payload_hash>
+        <record_name>training_session</record_name>
+        <reverted_from/>
+        <source>975a2e29c3b807104a9d563ed4013135</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 16:34:01</sys_created_on>
+        <sys_id>7f141bc6c33c0b104a9d563ed4013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e2230263d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 16:34:01</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>3b141bc65b3c0b10514332ac4f0c0b51</update_guid>
+        <update_guid_history>3b141bc65b3c0b10514332ac4f0c0b51:-192333224</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="training_session">a11657cac33c0b104a9d563ed401315e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 16:42:36</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>41a9f61fd7624758ba567181fe834240</sys_id>
+        <sys_metadata>1d0457c6c33c0b104a9d563ed401318a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>training_session</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_scope_delete display_value="">6019b5749aa9425eba4ef926327b8524</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_1d0457c6c33c0b104a9d563ed401318a</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_1d0457c6c33c0b104a9d563ed401318a">7f141bc6c33c0b104a9d563ed4013152</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 16:42:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ee096c6dc3b8c3104a9d563ed401310a" extends="task" label="Enrollment" max_length="40" name="x_1590365_shark_0_enrollment" type="collection">
         <element label="Reproval Reason" max_length="1000" name="reproval_reason" type="string"/>
-        <element attributes="ref_auto_completer=AJAXTableCompleter,ref_ac_columns=training_date&#13;&#10;" label="Training Session" max_length="32" name="training_session" reference="x_1590365_shark_0_training_session" type="reference"/>
+        <element attributes="ref_auto_completer=AJAXTableCompleter,ref_ac_columns=training_date&#13;&#10;" label="Training Session" max_length="32" name="training_session" reference="x_1590365_shark_0_training_session" reference_qual="javascript:new x_1590365_shark_0.SharkUniversityUtils().refQualTrainingSessionForm()" type="reference" use_reference_qualifier="advanced"/>
     </element>
 </database>

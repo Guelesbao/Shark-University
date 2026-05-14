@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="afbe5469c378c3104a9d563ed4013182" label="Course" max_length="40" name="x_1590365_shark_0_course" type="collection">
+        <element choice="3" default="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Integrating" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Starting" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="3" value="3"/>
+            </choice>
+        </element>
         <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Translated Text" max_length="1000" name="translated_text" reference_qual="null" reference_qual_condition="null" type="string"/>
+        <element label="Integration Error Message" max_length="1000" name="integration_error_message" type="string"/>
         <element display="true" label="Name" max_length="100" name="name" type="string"/>
     </element>
 </database>

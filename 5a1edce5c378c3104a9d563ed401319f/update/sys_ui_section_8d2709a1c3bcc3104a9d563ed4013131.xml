@@ -4,13 +4,13 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:01:06</sys_created_on>
-            <sys_id>dd27cde5c3bcc3104a9d563ed4013197</sys_id>
+            <sys_created_on>2026-05-14 13:14:33</sys_created_on>
+            <sys_id>b700f71ac3bc8b104a9d563ed40131db</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_course" sys_domain="global" view="Default view">8d2709a1c3bcc3104a9d563ed4013131</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:01:06</sys_updated_on>
+            <sys_updated_on>2026-05-14 13:14:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,27 @@
             <element>description</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 17:01:06</sys_created_on>
-            <sys_id>1927cde5c3bcc3104a9d563ed4013199</sys_id>
+            <sys_created_on>2026-05-14 13:14:33</sys_created_on>
+            <sys_id>7300f71ac3bc8b104a9d563ed40131dc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_course" sys_domain="global" view="Default view">8d2709a1c3bcc3104a9d563ed4013131</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 17:01:06</sys_updated_on>
+            <sys_updated_on>2026-05-14 13:14:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>translated_text</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-14 13:32:01</sys_created_on>
+            <sys_id>eb047352c3fc8b104a9d563ed4013147</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1590365_shark_0_course" sys_domain="global" view="Default view">8d2709a1c3bcc3104a9d563ed4013131</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-14 13:32:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
