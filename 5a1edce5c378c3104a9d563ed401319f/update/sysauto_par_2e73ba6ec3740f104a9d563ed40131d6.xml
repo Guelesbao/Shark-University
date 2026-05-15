@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysauto_par">
+    <sysauto_par action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>List of Today's Enroll - Instructor</name>
+        <notification display_value="">ae73ba6ec3740f104a9d563ed40131cf</notification>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:00:00</run_period>
+        <run_start>2026-05-15 15:17:12</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>daily</run_type>
+        <sys_class_name>sysauto_par</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 03:28:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2e73ba6ec3740f104a9d563ed40131d6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>List of Today's Enroll - Instructor</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>sysauto_par_2e73ba6ec3740f104a9d563ed40131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:00:15</sys_updated_on>
+        <time_zone/>
+        <to_export>2e73b22ac3740f104a9d563ed401318e</to_export>
+        <upgrade_safe>false</upgrade_safe>
+        <zip_output>false</zip_output>
+    </sysauto_par>
+</record_update>

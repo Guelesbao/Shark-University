@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">d86cb6eec3b40f104a9d563ed401317b</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":false,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"default"},"yAxisHidden":false,"xAxisHidden":false,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refund","sourceType":"table","tableOrViewName":"x_1590365_hr_sys_0_refund","filterQuery":"sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^state!=7","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"kc54wykk","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"dataSources","value":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refund","sourceType":"table","tableOrViewName":"x_1590365_hr_sys_0_refund","filterQuery":"sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^state!=7","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","dataCategories":["trend","group","simple"]}],"noDebounce":true,"propLabel":"Data sources","groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","groupByField":"opened_by.name","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":5,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"metrics":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","id":"ZEdGaWJHVjRYekUxT1RBek5qVmZhSEpmYzNselh6QmZjbVZtZFc1a01UYzNOelUyTlRJeE56ZzVNQT09MTc3NzU2NTI1NjcxMw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"headerTitle":"Top 5 Requesters","description":"The top 5 applicants this month"}</component_props>
+        <h>13</h>
+        <name>Refund List</name>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>986cb6eec3b40f104a9d563ed4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refund List</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>par_dashboard_widget_986cb6eec3b40f104a9d563ed4013193</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:15</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>par_dashboard_widget_986cb6eec3b40f104a9d563ed4013193</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">d86cb6eec3b40f104a9d563ed401317b</canvas><component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component><component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":false,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"default"},"yAxisHidden":false,"xAxisHidden":false,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refund","sourceType":"table","tableOrViewName":"x_1590365_hr_sys_0_refund","filterQuery":"sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^state!=7","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"kc54wykk","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"dataSources","value":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refund","sourceType":"table","tableOrViewName":"x_1590365_hr_sys_0_refund","filterQuery":"sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^state!=7","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","dataCategories":["trend","group","simple"]}],"noDebounce":true,"propLabel":"Data sources","groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","groupByField":"opened_by.name","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":5,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"metrics":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzU2NTIxNzg5MA==","id":"ZEdGaWJHVjRYekUxT1RBek5qVmZhSEpmYzNselh6QmZjbVZtZFc1a01UYzNOelUyTlRJeE56ZzVNQT09MTc3NzU2NTI1NjcxMw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"headerTitle":"Top 5 Requesters","description":"The top 5 applicants this month"}</component_props><h>13</h><name>Refund List</name><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-15 04:07:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>986cb6eec3b40f104a9d563ed4013193</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Refund List</sys_name><sys_overrides/><sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package><sys_policy/><sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope><sys_update_name>par_dashboard_widget_986cb6eec3b40f104a9d563ed4013193</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-15 04:07:15</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1495886908</payload_hash>
+        <record_name>Refund List</record_name>
+        <reverted_from/>
+        <source>975a2e29c3b807104a9d563ed4013135</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:15</sys_created_on>
+        <sys_id>5c6cb6eec3b40f104a9d563ed4013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e29d12dbf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:15</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>186cb6eea0b40f10d68a074b6a84f695</update_guid>
+        <update_guid_history>186cb6eea0b40f10d68a074b6a84f695:1495886908</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Refund List">f86cf6eec3b40f104a9d563ed401315b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:16</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>84e924b7a4ff42b49455d7f6c0e94a10</sys_id>
+        <sys_metadata>986cb6eec3b40f104a9d563ed4013193</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refund List</sys_name>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_scope_delete display_value="">6019b5749aa9425eba4ef926327b8524</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_986cb6eec3b40f104a9d563ed4013193</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_986cb6eec3b40f104a9d563ed4013193">5c6cb6eec3b40f104a9d563ed4013196</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

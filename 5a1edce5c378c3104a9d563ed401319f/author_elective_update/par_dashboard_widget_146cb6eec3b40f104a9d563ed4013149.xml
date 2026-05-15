@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">506cb6eec3b40f104a9d563ed401312b</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"default","showLegend":false,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"palette","palette":"08e1d719d7100200b96d45a3ce610375"},"yAxisHidden":false,"xAxisHidden":false,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refund","sourceType":"table","tableOrViewName":"x_1590365_hr_sys_0_refund","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzUxNDI4NDQxMw==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":true,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Requests by Category","headingLevel":2,"description":"","showBorder":true,"bareBorder":false,"dataCategory":"group","telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzUxNDI4NDQxMw==","id":"ZEdGaWJHVjRYekUxT1RBek5qVmZhSEpmYzNselh6QmZjbVZtZFc1a01UYzNOelV4TkRJNE5EUXhNdz09MTc3NzUxNDI4NTcxMw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzUxNDI4NDQxMw==","groupByField":"category","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":true,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":false,"showFilterIcon":false,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"kk3jphfj","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous_aggregate","startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"colorConfig","value":{"type":"palette","palette":"08e1d719d7100200b96d45a3ce610375"},"noDebounce":true,"propLabel":"Colors"}</component_props>
+        <h>16</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>146cb6eec3b40f104a9d563ed4013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>par_dashboard_widget_146cb6eec3b40f104a9d563ed4013149</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:14</sys_updated_on>
+        <visualization/>
+        <w>37</w>
+        <widget_props/>
+        <x>11</x>
+        <y>13</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>par_dashboard_widget_146cb6eec3b40f104a9d563ed4013149</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">506cb6eec3b40f104a9d563ed401312b</canvas><component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component><component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"default","showLegend":false,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"palette","palette":"08e1d719d7100200b96d45a3ce610375"},"yAxisHidden":false,"xAxisHidden":false,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refund","sourceType":"table","tableOrViewName":"x_1590365_hr_sys_0_refund","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzUxNDI4NDQxMw==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":true,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Requests by Category","headingLevel":2,"description":"","showBorder":true,"bareBorder":false,"dataCategory":"group","telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzUxNDI4NDQxMw==","id":"ZEdGaWJHVjRYekUxT1RBek5qVmZhSEpmYzNselh6QmZjbVZtZFc1a01UYzNOelV4TkRJNE5EUXhNdz09MTc3NzUxNDI4NTcxMw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE1OTAzNjVfaHJfc3lzXzBfcmVmdW5kMTc3NzUxNDI4NDQxMw==","groupByField":"category","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":true,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":false,"showFilterIcon":false,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"kk3jphfj","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous_aggregate","startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"colorConfig","value":{"type":"palette","palette":"08e1d719d7100200b96d45a3ce610375"},"noDebounce":true,"propLabel":"Colors"}</component_props><h>16</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-15 04:07:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>146cb6eec3b40f104a9d563ed4013149</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package><sys_policy/><sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope><sys_update_name>par_dashboard_widget_146cb6eec3b40f104a9d563ed4013149</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-15 04:07:14</sys_updated_on><visualization/><w>37</w><widget_props/><x>11</x><y>13</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>6689843</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>975a2e29c3b807104a9d563ed4013135</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:14</sys_created_on>
+        <sys_id>186cb6eec3b40f104a9d563ed401314c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e29d12c210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:14</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>d06cb6ee93b40f10074737f5436f9a4b</update_guid>
+        <update_guid_history>d06cb6ee93b40f10074737f5436f9a4b:6689843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">a06cb6eec3b40f104a9d563ed40131dd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:15</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>1d565f233bb249009efaa2c32ef4e400</sys_id>
+        <sys_metadata>146cb6eec3b40f104a9d563ed4013149</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_scope_delete display_value="">6019b5749aa9425eba4ef926327b8524</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_146cb6eec3b40f104a9d563ed4013149</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_146cb6eec3b40f104a9d563ed4013149">186cb6eec3b40f104a9d563ed401314c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

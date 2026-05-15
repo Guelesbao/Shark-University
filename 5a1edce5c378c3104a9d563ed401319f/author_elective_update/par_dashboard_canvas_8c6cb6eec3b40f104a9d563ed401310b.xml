@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Shark University Dashboard">446c76eec3b40f104a9d563ed40131e7</dashboard>
+        <dashboard_tab display_value="New Tab 2">846cb6eec3b40f104a9d563ed4013106</dashboard_tab>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c6cb6eec3b40f104a9d563ed401310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_update_name>par_dashboard_canvas_8c6cb6eec3b40f104a9d563ed401310b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:13</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>par_dashboard_canvas_8c6cb6eec3b40f104a9d563ed401310b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="Shark University Dashboard">446c76eec3b40f104a9d563ed40131e7</dashboard><dashboard_tab display_value="New Tab 2">846cb6eec3b40f104a9d563ed4013106</dashboard_tab><layout>[]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-15 04:07:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8c6cb6eec3b40f104a9d563ed401310b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package><sys_policy/><sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope><sys_update_name>par_dashboard_canvas_8c6cb6eec3b40f104a9d563ed401310b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-15 04:07:13</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>-487133373</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>975a2e29c3b807104a9d563ed4013135</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:13</sys_created_on>
+        <sys_id>806cb6eec3b40f104a9d563ed401310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e29d129260000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:13</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>4c6cb6ee13b40f10285107251dbb760d</update_guid>
+        <update_guid_history>4c6cb6ee13b40f10285107251dbb760d:-487133373</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">106cb6eec3b40f104a9d563ed401319f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 04:07:15</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>0e01c317dfc5493399fd2d0ee83c73b1</sys_id>
+        <sys_metadata>8c6cb6eec3b40f104a9d563ed401310b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
+        <sys_scope_delete display_value="">6019b5749aa9425eba4ef926327b8524</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_8c6cb6eec3b40f104a9d563ed401310b</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_8c6cb6eec3b40f104a9d563ed401310b">806cb6eec3b40f104a9d563ed401310f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 04:07:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
