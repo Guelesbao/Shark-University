@@ -11,8 +11,16 @@
         <name>Hide related list</name>
         <order/>
         <script><![CDATA[function onLoad() {
-	if (g_user.hasRoleExactly('x_1590365_shark_0.user') || g_user.hasRoleExactly('x_1590365_shark_0.training_instructor')) {
-		g_form.hideRelatedLists();
+	var isSharkUser = g_user.hasRoleExactly('x_1590365_shark_0.user');
+	var isTrainingIntructor = g_user.hasRoleExactly('x_1590365_shark_0.training_instructor');
+	var isApproverUser = g_user.hasRole('approver_user');
+
+	if (isSharkUser || isTrainingIntructor) {
+		g_form.hideRelatedList('task_sla.task');
+		g_form.hideRelatedList('sysapproval_approver.sysapproval');
+	} else if (isApproverUser) {
+		g_form.hideRelatedList('task_sla.task');
+		g_form.showRelatedList('sysapproval_approver.sysapproval');
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -21,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f76023eac3f80f104a9d563ed40131f8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Hide related list</sys_name>
         <sys_overrides/>
         <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
@@ -29,7 +37,7 @@
         <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
         <sys_update_name>sys_script_client_f76023eac3f80f104a9d563ed40131f8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-15 06:55:54</sys_updated_on>
+        <sys_updated_on>2026-05-15 14:58:25</sys_updated_on>
         <table>x_1590365_shark_0_enrollment</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

@@ -35,25 +35,54 @@ SharkUniversityUtils.prototype = Object.extendsObject(global.AbstractAjaxProcess
 	},
 
 	refQualTrainingSession: function () {
-		var grEnrollment = new GlideRecord('x_1590365_shark_0_enrollment');
 		var sessionsToHide = [];
+		var coursesToHide = [];
+		var currentUser = gs.getUserID();
+		var grEnrollment = new GlideRecord('x_1590365_shark_0_enrollment');
 		grEnrollment.addEncodedQuery('state!=4^training_session.training_date>javascript:gs.endOfToday()');
 		grEnrollment.query();
 
 		while (grEnrollment.next()) {
 			var sys_idTrainingSessions = grEnrollment.getValue('training_session');
-			var availableSeats = grEnrollment.getElement('training_session.max_seats').toString();
+			var availableSeats = grEnrollment.getElement('training_session.available_seats').toString();
 			var openedByMe = grEnrollment.getValue('opened_by');
 
 			if ((availableSeats <= '0') || (availableSeats > '0' && openedByMe == gs.getUserID())) {
 				sessionsToHide.push(sys_idTrainingSessions);
 			}
 		}
-		
-		if (sessionsToHide.length > 0) {
-			return 'sys_idNOT IN' + sessionsToHide.join(',');
+
+		var gaEnrollment = new GlideAggregate('x_1590365_shark_0_enrollment');
+		gaEnrollment.addEncodedQuery('opened_by=' + currentUser + '^state!=4');
+		gaEnrollment.groupBy('training_session.course');
+		gaEnrollment.addAggregate('COUNT');
+		gaEnrollment.query();
+
+		while (gaEnrollment.next()) {
+			var courseCount = gaEnrollment.getAggregate('COUNT');
+
+			if (courseCount >= 3) {
+				var courseId = gaEnrollment.getValue('training_session.course');
+				if (courseId) {
+					coursesToHide.push(courseId);
+				}
+			}
 		}
-		return '';
+
+		var query = '';
+
+		if (sessionsToHide.length > 0) {
+			query += 'sys_idNOT IN' + sessionsToHide.join(',');
+		}
+
+		if (coursesToHide.length > 0) {
+			if (query.length > 0) {
+				query += '^';
+			}
+			query += 'courseNOT IN' + coursesToHide.join(',');
+		}
+
+		return query;
 	},
 
 	refQualTrainingSessionForm: function () {
@@ -63,8 +92,8 @@ SharkUniversityUtils.prototype = Object.extendsObject(global.AbstractAjaxProcess
 		grTrainingSession.addQuery('instructor', isInstructorOfCourse);
 		grTrainingSession.query();
 
-		while (grTrainingSession.next()) {	
-			var sys_idTrainingSessions = grTrainingSession.getValue('sys_id');		
+		while (grTrainingSession.next()) {
+			var sys_idTrainingSessions = grTrainingSession.getValue('sys_id');
 			if (grTrainingSession) {
 				sessionsToHide.push(sys_idTrainingSessions);
 			}
@@ -82,13 +111,13 @@ SharkUniversityUtils.prototype = Object.extendsObject(global.AbstractAjaxProcess
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-11 18:11:37</sys_created_on>
         <sys_id>02db0dadc3bcc3104a9d563ed401310b</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>SharkUniversityUtils</sys_name>
         <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
         <sys_update_name>sys_script_include_02db0dadc3bcc3104a9d563ed401310b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-13 18:04:56</sys_updated_on>
+        <sys_updated_on>2026-05-15 14:10:49</sys_updated_on>
     </sys_script_include>
 </record_update>

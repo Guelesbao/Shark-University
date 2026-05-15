@@ -19,7 +19,7 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path>course.description</dynamic_value_dot_walk_path>
+        <dynamic_value_dot_walk_path>course.translated_text</dynamic_value_dot_walk_path>
         <dynamic_value_field display_value="Training Session">8a5c7dadc33407104a9d563ed401318e</dynamic_value_field>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
@@ -82,18 +82,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-11 22:13:35</sys_created_on>
         <sys_id>35dd4aedc3b407104a9d563ed40131dc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Description</sys_name>
         <sys_package display_value="Shark University" source="x_1590365_shark_0">5a1edce5c378c3104a9d563ed401319f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Shark University">5a1edce5c378c3104a9d563ed401319f</sys_scope>
         <sys_update_name>item_option_new_35dd4aedc3b407104a9d563ed40131dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-11 22:33:19</sys_updated_on>
+        <sys_updated_on>2026-05-15 21:54:00</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>6</type>
+        <type>2</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
